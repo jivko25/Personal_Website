@@ -239,6 +239,10 @@ article.active {
   font-weight: var(--fw-500);
 }
 
+.no-shadow {
+  box-shadow: none !important;
+}
+
 .article-title {
   position: relative;
   padding-bottom: 7px;
@@ -652,6 +656,14 @@ main {
   visibility: hidden;
 }
 
+.modal-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
 .modal-container::-webkit-scrollbar { display: none; }
 
 .modal-container.active {
@@ -731,7 +743,7 @@ main {
 
 .modal-title { margin-bottom: 4px; }
 
-.modal-content time {
+#modal-type {
   font-size: var(--fs-6);
   color: var(--light-gray-70);
   font-weight: var(--fw-300);
@@ -743,6 +755,17 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+#modal-technologies {
+  margin: 1rem 0;
+}
+
+#modal-technologies li {
+    color: white;
+    list-style: "🔥" !important;
+    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 

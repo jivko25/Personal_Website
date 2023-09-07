@@ -187,12 +187,14 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" id="portfolio-link" data-nav-link>
+                Portfolio
+              </button>
             </li>
 
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
+            </li> -->
 
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
@@ -479,46 +481,6 @@
           - testimonials modal
         -->
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
           <!--
           - clients
         -->
@@ -659,6 +621,17 @@
                   />
                 </svg>
                 CSS
+              </li>
+              <li class="technology-item">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="44"
+                  height="44"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="#CC6699" d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z"/>
+                </svg>
+                Sass
               </li>
               <li class="technology-item">
                 <svg
@@ -1078,6 +1051,20 @@
                 </svg>
                 Stripe
               </li>
+              <li class="technology-item">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#7AB55C"
+                    d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"
+                  />
+                </svg>
+                Shopify
+              </li>
             </ul>
           </section>
         </article>
@@ -1178,13 +1165,15 @@
                 </p>
               </li>
 
-              
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Front-end developer</h4>
 
                 <span>2023/05 — 2023/09</span>
 
-                <p class="timeline-text">Implementing company product for managing internal processes, marketing campaigns and invoices</p>
+                <p class="timeline-text">
+                  Implementing company product for managing internal processes,
+                  marketing campaigns and invoices
+                </p>
               </li>
 
               <li class="timeline-item">
@@ -1271,6 +1260,71 @@
           <header>
             <h2 class="h2 article-title">Portfolio</h2>
           </header>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <!-- <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                    id="modal-image"
+                  />
+                </figure>
+              </div> -->
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" id="modal-name">Daniel lewis</h4>
+
+                <p id="modal-type"></p>
+
+                <div data-modal-text>
+                  <p id="modal-description"></p>
+                </div>
+
+                <ul id="modal-technologies"></ul>
+                
+                <div class="modal-buttons-wrapper">
+                  <a id="modal-href" target="_blank">
+                    <button
+                      class="form-btn no-shadow"
+                      data-form-btn=""
+                    >
+                      <ion-icon
+                        name="paper-plane"
+                        role="img"
+                        class="md hydrated"
+                        aria-label="paper plane"
+                      ></ion-icon>
+                      <span>Link</span>
+                    </button></a
+                  >
+                  <a id="modal-git" target="_blank">
+                    <button
+                      class="form-btn no-shadow"
+                      data-form-btn=""
+                    >
+                      <ion-icon
+                        name="logo-github"
+                        role="img"
+                        class="md hydrated"
+                        aria-label="logo github"
+                      ></ion-icon>
+                      <span>Github</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
 
           <section class="projects">
             <ul class="filter-list">
@@ -1545,7 +1599,7 @@
         - #BLOG
       -->
 
-        <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
           <header>
             <h2 class="h2 article-title">Blog</h2>
           </header>
@@ -1735,7 +1789,7 @@
               </li>
             </ul>
           </section>
-        </article>
+        </article> -->
 
         <!--
         - #CONTACT
